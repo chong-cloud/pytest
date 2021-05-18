@@ -106,3 +106,6 @@ logs/
 *.iml
 *.ipr
 context/bpmruntime/
+
+__pycache__
+.pytest_cache
