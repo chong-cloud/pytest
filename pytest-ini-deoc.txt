@@ -1,0 +1,25 @@
+﻿[pytest]
+# addopts ===> 修改默认命令行选项
+addopts = -sv
+# use defined marker
+markers =
+    api_test: this is api test
+    web_test: this is web test
+    app_test: this is app test
+    smoke_test: this is smoke test
+
+# 更改规则，只增不删
+# python_files =     test_*  *_test  test*
+# python_classes =   Test*   test*
+# python_functions = test_*  test*
+
+# norecursedirs =
+# 用于修改收集测试用例的规则
+
+# log_cli = True/False/1/0
+# 加了log_cli=1之后，可以清晰看到哪个package下的哪个module下的哪个测试用例是否passed还是failed；
+# 设置为False则不显示，减少性能消耗
+
+# xfail_strict = True
+# 作用：设置xfail_strict = True可以让那些标记为@pytest.mark.xfail但实际通过显示XPASS的测试用例被报告为失败
+# 格式：True 、False（默认），1、0
